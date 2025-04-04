@@ -77,4 +77,4 @@ UPDATE Asientos
 SET estado_id = 2
 WHERE asiento_id IN (1, 2, 15, 20);
 
-Select * from Asientos;
+Select * from Reservas;
