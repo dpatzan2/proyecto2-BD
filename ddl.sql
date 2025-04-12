@@ -62,7 +62,7 @@ CREATE TABLE Asientos (
     asiento_id SERIAL PRIMARY KEY,
     seccion_id INTEGER NOT NULL,
     numero INTEGER NOT NULL,
-    estado_id INTEGER NOT NULL DEFAULT 1, -- 1 = disponible por defecto
+    estado_id INTEGER NOT NULL DEFAULT 1, 
     FOREIGN KEY (seccion_id) REFERENCES Secciones(seccion_id),
     FOREIGN KEY (estado_id) REFERENCES EstadosAsiento(estado_id),
     UNIQUE(seccion_id, numero)
@@ -74,7 +74,7 @@ CREATE TABLE Reservas (
     asiento_id INTEGER NOT NULL,
     usuario_id INTEGER NOT NULL,
     fecha_reserva TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    estado_id INTEGER NOT NULL DEFAULT 1, -- 1 = activa por defecto
+    estado_id INTEGER NOT NULL DEFAULT 1, 
     FOREIGN KEY (asiento_id) REFERENCES Asientos(asiento_id),
     FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id),
     FOREIGN KEY (estado_id) REFERENCES EstadosReserva(estado_id)

@@ -1,4 +1,3 @@
--- data.sql
 
 -- Nuevo evento
 INSERT INTO Eventos (nombre, fecha, descripcion, capacidad_total)
@@ -1516,5 +1515,3 @@ INSERT INTO Usuarios (nombre, email, telefono) VALUES ('Immanuel Daley', 'idaley
 INSERT INTO Usuarios (nombre, email, telefono) VALUES ('Gherardo Bollen', 'gbollenrp@wordpress.com', '995 647 4408');
 INSERT INTO Usuarios (nombre, email, telefono) VALUES ('Trisha Wakelam', 'twakelamrq@berkeley.edu', '894 303 4771');
 INSERT INTO Usuarios (nombre, email, telefono) VALUES ('Ambrosi Murrish', 'amurrishrr@tripadvisor.com', '404 694 7088');
-
-Select * from Reservas;

@@ -6,12 +6,12 @@ from psycopg2 import errors
 
 DB_CONFIG = {
     "host": "localhost",
-    "dbname": "Proyecto_2",
+    "dbname": "proyecto02",
     "user": "postgres",
-    "password": "admin123"
+    "password": "password"
 }
 
-TOTAL_USUARIOS = 1000
+TOTAL_USUARIOS = 600
 MAX_ASIENTOS = 500
 CONCURRENT_WORKERS = TOTAL_USUARIOS
 
